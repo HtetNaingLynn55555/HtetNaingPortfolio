@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Contact() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-12  mx-1.5">
@@ -7,9 +8,11 @@ export default function Contact() {
             <p className="text-2xl text-center font-semibold tracking-wide">
               Let’s create something together
             </p>
-            <button className="hover:cursor-pointer hover:text-third-font-color border rounded-xl bg-primary border-secondary font-medium text-[16px] py-1.5 px-2.5">
-              Contact
-            </button>
+            <Link to={"/contact"}>
+              <button className="hover:cursor-pointer hover:text-third-font-color border rounded-xl bg-primary border-secondary font-medium text-[16px] py-1.5 px-2.5">
+                Contact
+              </button>
+            </Link>
           </div>
         </div>
       </div>
