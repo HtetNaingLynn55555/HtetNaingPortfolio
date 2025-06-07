@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import ProjectDetails from "./components/Pages/project/ProjectDetails";
 import ServiceDetails from "./components/Pages/service/ServiceDetails";
+import ToolDetails from "./components/Pages/tools/ToolDetails";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
             <Route path="/contact" element={<ContactDetails />} />
             <Route path="/projects" element={<ProjectDetails />} />
             <Route path="/services" element={<ServiceDetails />} />
+            <Route path="/tools" element={<ToolDetails />} />
           </Route>
         </Routes>
       </BrowserRouter>

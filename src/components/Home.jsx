@@ -2,6 +2,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import Projects from "./Pages/project/Project";
 import Contact from "./Pages/contact/Contact";
 import Service from "./Pages/service/Service";
+import Tool from "./Pages/tools/Tool";
 export default function Home() {
   return (
     <>
@@ -35,6 +36,7 @@ export default function Home() {
       </div>
       <Projects />
       <Service />
+      <Tool />
     </>
   );
 }

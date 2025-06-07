@@ -31,11 +31,11 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <a href="">
+          <Link to="/tools">
             <span>
               <IoBuildOutline />
             </span>
-          </a>
+          </Link>
         </li>
 
         <li>
