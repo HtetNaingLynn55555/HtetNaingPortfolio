@@ -3,11 +3,13 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
-import Projects from "./components/Project";
-import Contact from "./components/Contact";
-import ContactDetails from "./components/ContactDetails";
+
+import Contact from "./components/Pages/contact/Contact";
+import ContactDetails from "./components/Pages/contact/ContactDetails";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
+import ProjectDetails from "./components/Pages/project/ProjectDetails";
+import ServiceDetails from "./components/Pages/service/ServiceDetails";
 function App() {
   return (
     <>
@@ -16,6 +18,8 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<ContactDetails />} />
+            <Route path="/projects" element={<ProjectDetails />} />
+            <Route path="/services" element={<ServiceDetails />} />
           </Route>
         </Routes>
       </BrowserRouter>

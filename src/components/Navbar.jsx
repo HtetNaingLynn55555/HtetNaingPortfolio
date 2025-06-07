@@ -17,18 +17,18 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <a href="">
+          <Link to={"/projects"}>
             <span>
               <IoFolderOpenOutline />
             </span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="">
+          <Link to={"/services"}>
             <span>
               <IoBagHandleOutline />
             </span>
-          </a>
+          </Link>
         </li>
         <li>
           <a href="">
