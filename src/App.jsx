@@ -11,6 +11,7 @@ import Layout from "./components/Layout";
 import ProjectDetails from "./components/Pages/project/ProjectDetails";
 import ServiceDetails from "./components/Pages/service/ServiceDetails";
 import ToolDetails from "./components/Pages/tools/ToolDetails";
+import About from "./components/Pages/about/About";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<ContactDetails />} />
+            <Route path="/about" element={<About />} />
             <Route path="/projects" element={<ProjectDetails />} />
             <Route path="/services" element={<ServiceDetails />} />
             <Route path="/tools" element={<ToolDetails />} />

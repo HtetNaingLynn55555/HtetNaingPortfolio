@@ -3,6 +3,7 @@ import { IoBuildOutline } from "react-icons/io5";
 import { IoFolderOpenOutline } from "react-icons/io5";
 import { IoHomeOutline } from "react-icons/io5";
 import { IoBagHandleOutline } from "react-icons/io5";
+import { IoPersonOutline } from "react-icons/io5";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 export default function Navbar() {
@@ -13,6 +14,13 @@ export default function Navbar() {
           <Link to={"/"}>
             <span>
               <IoHomeOutline />
+            </span>
+          </Link>
+        </li>
+        <li>
+          <Link to={"/about"}>
+            <span>
+              <IoPersonOutline />
             </span>
           </Link>
         </li>
