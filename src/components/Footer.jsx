@@ -9,7 +9,7 @@ export default function Footer() {
             <h1>Htet Naing Lynn</h1>
           </div>
           <div>
-            <ul className="my-4 text-[14px] font-light flex justify-between items-center">
+            <ul className="my-4 text-[14px] text-secondary-font-color font-light flex justify-between items-center">
               <li className=" hover:text-third-font-color">
                 <Link to={"/"}>Home</Link>
               </li>
@@ -32,7 +32,9 @@ export default function Footer() {
               <span>
                 <IoHeartOutline className="text-third-font-color" />
               </span>
-              <span>htetnainglynnhnl@gmail.com</span>
+              <span className="text-secondary-font-color">
+                htetnainglynnhnl@gmail.com
+              </span>
               <span>
                 <IoHeartOutline className="text-third-font-color" />
               </span>
