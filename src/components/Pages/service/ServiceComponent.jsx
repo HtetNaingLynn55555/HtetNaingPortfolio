@@ -12,7 +12,7 @@ export default function ServiceComponent({ service }) {
 
       <div className="my-3.5 col-span-3 flex justify-between items-start">
         <div className="">
-          <h1 className="text-main-font-color justify-self-start  text-2xl lowercase font-bold ">
+          <h1 className="text-secondary-font-color justify-self-start  text-[18px]  font-bold ">
             {service.title}
           </h1>
           <p className="text-secondary-font-color mt-4.5 text-[15px]">

@@ -33,10 +33,12 @@ export default function ProfessionalExperience() {
       <div className=" grid grid-cols-8 rounded-lg text-[20px]  sm:col-start-2 mt-12  sm:col-span-10 md:col-start-3 md:col-span-8 lg:col-start-4 lg:col-span-6 bg-secondary border border-secondary ">
         <div className="col-start-1 col-span-8 px-4  md:px-6 my-5 ">
           <div className="flex justify-between items-center">
-            <h1 className="font-bold text-[18px]">
+            <h1 className=" text-secondary-font-color   text-[18px]  font-bold">
               Web Developer ( mid-level )
             </h1>
-            <h1 className="text-[12px] ">2023 - Present at UMG Myanmar</h1>
+            <h1 className="text-[12px] text-secondary-font-color ">
+              2023 - Present at UMG Myanmar
+            </h1>
           </div>
           <ProjectExp project={data[0]} />
           <ProjectExp project={data[1]} />
@@ -53,15 +55,15 @@ function ProjectExp({ project }) {
     <div className="grid grid-cols-3 hover:opacity-[.80]  my-4 p-3 border-secondary bg-primary rounded-xl ">
       <div className="col-span-3 ">
         <div>
-          <h1 className="text-main-font-color justify-self-start  text-[18px] lowercase font-bold ">
+          <h1 className="text-secondary-font-color justify-self-start  text-[18px]  font-bold ">
             {project.title}
           </h1>
-          <p className="text-secondary-font-color text-[15px] my-2.5">
-            {project.paragraph_one}
-          </p>
-          <p className="text-secondary-font-color text-[15px] my-2.5">
-            {project.paragraph_two}
-          </p>
+          <ul className="text-secondary-font-color text-[15px] list-disc ms-4.5 my-2.5">
+            <li>{project.paragraph_one}</li>
+          </ul>
+          <ul className="text-secondary-font-color text-[15px] ms-4.5 list-disc my-2.5">
+            <li> {project.paragraph_two}</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -73,13 +75,21 @@ function OtherWebsite() {
     <div className="grid grid-cols-3 hover:opacity-[.80]  my-4 p-3 border-secondary bg-primary rounded-xl ">
       <div className="col-span-3 ">
         <div>
-          <h1 className="text-main-font-color justify-self-start  text-[18px] lowercase font-bold ">
-            Other WebSite
+          <h1 className="text-secondary-font-color justify-self-start  text-[18px]  font-bold">
+            Static WebSite
           </h1>
           <p className=" text-secondary-font-color text-[15px] my-2.5">
-            <ul className="flex justify-around gap-1.5 items-center">
-              <li>Beexpress</li>
-              <li>UMG Logestic</li>
+            <ul className="flex justify-around gap-1.5 items-center list-disc">
+              <li className="hover:cursor-pointer hover:text-third-font-color">
+                <a href="https://beexprss.com/" target="_blank">
+                  BeeXprss
+                </a>
+              </li>
+              <li className="hover:cursor-pointer hover:text-third-font-color">
+                <a href="https://umglogistics.com/" target="_blank">
+                  UMG Logestic
+                </a>
+              </li>
             </ul>
           </p>
         </div>

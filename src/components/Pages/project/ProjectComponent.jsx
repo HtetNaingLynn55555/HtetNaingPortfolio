@@ -11,7 +11,7 @@ export default function ProjectComponent({ project }) {
             alt=""
           />
           <div>
-            <h1 className="text-main-font-color justify-self-start  text-[18px] lowercase font-bold ">
+            <h1 className="text-secondary-font-color justify-self-start  text-[18px]  font-bold ">
               {project.title}
             </h1>
             <p className="text-secondary-font-color text-[15px]">
