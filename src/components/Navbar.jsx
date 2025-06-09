@@ -9,39 +9,39 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-12 y mx-1.5">
-      <ul className="flex rounded-lg text-[20px] px-14 justify-around  sm:col-start-2 items-center py-4 sm:col-span-10 md:col-start-3 md:col-span-8 lg:col-start-4 lg:col-span-6 bg-secondary border border-secondary ">
+      <ul className="flex text-secondary-font-color rounded-lg text-[20px] px-14 justify-around  sm:col-start-2 items-center py-4 sm:col-span-10 md:col-start-3 md:col-span-8 lg:col-start-4 lg:col-span-6 bg-secondary border border-secondary ">
         <li>
           <Link to={"/"}>
             <span>
-              <IoHomeOutline />
+              <IoHomeOutline className="hover:text-third-font-color" />
             </span>
           </Link>
         </li>
         <li>
           <Link to={"/about"}>
             <span>
-              <IoPersonOutline />
+              <IoPersonOutline className="hover:text-third-font-color" />
             </span>
           </Link>
         </li>
         <li>
           <Link to={"/projects"}>
             <span>
-              <IoFolderOpenOutline />
+              <IoFolderOpenOutline className="hover:text-third-font-color" />
             </span>
           </Link>
         </li>
         <li>
           <Link to={"/services"}>
             <span>
-              <IoBagHandleOutline />
+              <IoBagHandleOutline className="hover:text-third-font-color" />
             </span>
           </Link>
         </li>
         <li>
           <Link to="/tools">
             <span>
-              <IoBuildOutline />
+              <IoBuildOutline className="hover:text-third-font-color" />
             </span>
           </Link>
         </li>
@@ -49,7 +49,7 @@ export default function Navbar() {
         <li>
           <Link to={"/contact"} href="">
             <span>
-              <IoMailOutline />
+              <IoMailOutline className="hover:text-third-font-color" />
             </span>
           </Link>
         </li>
