@@ -3,6 +3,7 @@ import Projects from "./Pages/project/Project";
 import Contact from "./Pages/contact/Contact";
 import Service from "./Pages/service/Service";
 import Tool from "./Pages/tools/Tool";
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
@@ -31,12 +32,11 @@ export default function Home() {
                 useful and beautiful websites
               </p>
               <div className="flex gap-5 mt-4">
-                <button className="hover:cursor-pointer text-secondary-font-color  hover:text-third-font-color border rounded-xl bg-primary border-secondary font-medium text-[16px] py-1.5 px-2.5">
-                  About Me
-                </button>
-                <button className="hover:cursor-pointer text-secondary-font-color hover:text-third-font-color border rounded-xl bg-primary border-secondary font-medium text-[16px] py-1.5 px-2.5">
-                  Resume
-                </button>
+                <Link to={"/about"}>
+                  <button className="text-secondary-font-color hover:cursor-pointer hover:text-third-font-color hover:border-primary hover:border hover:rounded-sm border rounded-sm bg-primary border-secondary font-medium text-[16px] py-2.5 px-5.5">
+                    About Me
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
