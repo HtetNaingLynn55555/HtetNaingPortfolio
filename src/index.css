@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 @theme {
   --color-primary: #262a33;
   --color-secondary: #1e222b;
@@ -7,4 +9,5 @@
   --color-main-font-color: #ffffff;
   --color-secondary-font-color: #9d9f9e;
   --color-third-font-color: #de6012;
+  --font-loto: "Lato", sans-serif;
 }

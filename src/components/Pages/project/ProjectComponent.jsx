@@ -6,8 +6,8 @@ export default function ProjectComponent({ project }) {
       <div className="col-span-3 sm:col-span-2">
         <div className="  flex justify-start gap-6  ">
           <img
-            src="/download.jpeg"
-            className="size-20 overflow-hidden justify-self-start rounded-xl"
+            src={project.img}
+            className="size-20 bg-white overflow-hidden justify-self-start rounded-xl"
             alt=""
           />
           <div>

@@ -78,7 +78,7 @@ function OtherWebsite() {
           <h1 className="text-secondary-font-color justify-self-start  text-[18px]  font-bold">
             Static WebSite
           </h1>
-          <p className=" text-secondary-font-color text-[15px] my-2.5">
+          <div className=" text-secondary-font-color text-[15px] my-2.5">
             <ul className="flex justify-around gap-1.5 items-center list-disc">
               <li className="hover:cursor-pointer hover:text-third-font-color">
                 <a href="https://beexprss.com/" target="_blank">
@@ -91,7 +91,7 @@ function OtherWebsite() {
                 </a>
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
     </div>

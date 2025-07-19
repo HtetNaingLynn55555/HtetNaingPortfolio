@@ -1,5 +1,5 @@
 import { IoHeartOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 export default function Footer() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-12  mx-1.5">
@@ -10,18 +10,49 @@ export default function Footer() {
           </div>
           <div>
             <ul className="my-4 text-[14px] text-secondary-font-color font-light flex justify-between items-center">
-              <li className=" hover:text-third-font-color">
-                <Link to={"/"}>Home</Link>
-              </li>
-              <li className=" hover:text-third-font-color">
-                <Link to={"/about"}>About</Link>
-              </li>
-              <li className=" hover:text-third-font-color">
-                <Link to={"/projects"}>Projects</Link>
-              </li>
-              <li className=" hover:text-third-font-color">
-                <Link to={"/contact"}>Contacts</Link>
-              </li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-third-font-color"
+                    : "text-secondary-font-color"
+                }
+                to={"/"}
+              >
+                <span className=" hover:text-third-font-color"> Home</span>
+              </NavLink>
+
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-third-font-color"
+                    : "text-secondary-font-color"
+                }
+                to={"/about"}
+              >
+                <span className=" hover:text-third-font-color">About</span>
+              </NavLink>
+
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-third-font-color"
+                    : "text-secondary-font-color"
+                }
+                to={"/projects"}
+              >
+                <span className=" hover:text-third-font-color">Projects</span>
+              </NavLink>
+
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-third-font-color"
+                    : "text-secondary-font-color"
+                }
+                to={"/contact"}
+              >
+                <span className=" hover:text-third-font-color">Contacts</span>
+              </NavLink>
             </ul>
           </div>
           <div className="my-4 text-primary font-bold border-0">
