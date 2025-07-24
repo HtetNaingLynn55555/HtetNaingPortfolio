@@ -12,8 +12,8 @@ export default function Home() {
           <div className="col-start-1 col-span-8 md:col-start-3 md:col-span-4  ">
             <div className="flex py-15 gap-3 flex-col justify-center items-center">
               <img
-                className=" rounded-full w-24 h-24"
-                src="/download.jpeg"
+                className=" rounded-full w-24 h-24 border-2 border-white"
+                src="/profile.jpg"
                 alt="my profile image"
               />
               <span className="text-secondary-font-color text-[12px]">
