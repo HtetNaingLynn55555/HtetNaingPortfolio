@@ -5,27 +5,25 @@ import { IoEllipseSharp } from "react-icons/io5";
 export default function ProfessionalExperience() {
   const data = [
     {
-      title: "Library Management System as Main PIC",
-      paragraph_one:
-        "Developed and maintained a libray management system to enhance user engagement and provide accessible, interactive educational content",
-      paragraph_two:
-        "Collaborated with a team to implement user-friendly features, such as course modules, progress tracking, and quizzes, to improve learning outcomes.",
+      key: 1,
+      title: "Learning Management System as Main PIC",
+      paragraph: [
+        "Collaborated on scope definition, feature implementation and responsive frontend integration.",
+        "Implemented admin dashboards, course detail pages and lesson video playback features.",
+        "Integrated API endpoints to display dynamic content such as enrolled courses and quiz results.",
+        "Ensured cross-browser compatibility and mobile responsiveness.",
+      ],
     },
 
     {
-      title: "Training Management System as Second PIC",
-      paragraph_one:
-        "Served as the second person in charge, collaborating closely on both front-end and back-end development of a Training Management System to enhance course scheduling, participant tracking, and reporting.",
-      paragraph_two:
-        "Contributed to the design and implementation of user-friendly interfaces, ensuring a seamless experience for trainers and trainess",
-    },
-
-    {
-      title: "Online Learning Platform as Second PIC",
-      paragraph_one:
-        "Collaborated with a team to implement user-friendly features, such as course modules, progress tracking, and quizzes, to improve learning outcomes",
-      paragraph_two:
-        "Developed and maintained a learning platform to enchance user engagement and provide accessible, interactive educational content.",
+      key: 2,
+      title: "Meeting Management System as Second PIC",
+      paragraph: [
+        "Developed dynamic and responsive user interfaces using Vue.js",
+        "Designed and implemented RESTful APIs and backend logic using Laravel, Eloquent ORM and MySQL",
+        "Developed CRUD features for meetings, attendees and departments",
+        "Used Tailwind CSS to build clean mobile-first UI",
+      ],
     },
   ];
   return (
@@ -37,12 +35,14 @@ export default function ProfessionalExperience() {
               Web Developer ( mid-level )
             </h1>
             <h1 className="text-[12px] text-secondary-font-color ">
-              2023 - Present at UMG Myanmar
+              2023 - June-2025
             </h1>
           </div>
-          <ProjectExp project={data[0]} />
-          <ProjectExp project={data[1]} />
-          <ProjectExp project={data[2]} />
+
+          {data.map((project) => (
+            <ProjectExp key={project.key} project={project} />
+          ))}
+
           <OtherWebsite />
         </div>
       </div>
@@ -58,11 +58,11 @@ function ProjectExp({ project }) {
           <h1 className="text-secondary-font-color justify-self-start  text-[18px]  font-bold ">
             {project.title}
           </h1>
+
           <ul className="text-secondary-font-color text-[15px] list-disc ms-4.5 my-2.5">
-            <li>{project.paragraph_one}</li>
-          </ul>
-          <ul className="text-secondary-font-color text-[15px] ms-4.5 list-disc my-2.5">
-            <li> {project.paragraph_two}</li>
+            {project.paragraph.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </div>
       </div>
@@ -78,18 +78,45 @@ function OtherWebsite() {
           <h1 className="text-secondary-font-color justify-self-start  text-[18px]  font-bold">
             Static WebSite
           </h1>
-          <div className=" text-secondary-font-color text-[15px] my-2.5">
-            <ul className="flex justify-around gap-1.5 items-center list-disc">
-              <li className="hover:cursor-pointer hover:text-third-font-color">
-                <a href="https://beexprss.com/" target="_blank">
-                  BeeXprss
-                </a>
-              </li>
-              <li className="hover:cursor-pointer hover:text-third-font-color">
-                <a href="https://umglogistics.com/" target="_blank">
-                  UMG Logestic
-                </a>
-              </li>
+          <div className=" text-secondary-font-color  text-[15px] my-2.5">
+            <ul className="grid grid-cols-12 px-2.5 ms-3.5">
+              <div className="col-span-12 sm:col-span-6 list-disc ">
+                <li className="hover:cursor-pointer  hover:text-third-font-color">
+                  <a href="https://beexprss.com/" target="_blank">
+                    BeeXprss
+                  </a>
+                </li>
+                <li className="hover:cursor-pointer hover:text-third-font-color">
+                  <a href="https://mdybayresort.com/" target="_blank">
+                    Mandalay Bay Resort
+                  </a>
+                </li>
+
+                <li className="hover:cursor-pointer hover:text-third-font-color">
+                  <a href="https://mandalaywaterboom.com/" target="_blank">
+                    Mandalay Water Boom
+                  </a>
+                </li>
+              </div>
+              <div className="col-span-12 sm:col-span-6 list-disc">
+                <li className="hover:cursor-pointer hover:text-third-font-color">
+                  <a href="https://yangonwaterboom.com/" target="_blank">
+                    Yangon Water Boom
+                  </a>
+                </li>
+
+                <li className="hover:cursor-pointer hover:text-third-font-color">
+                  <a href="https://openmind.com.mm/" target="_blank">
+                    Open Mind
+                  </a>
+                </li>
+
+                <li className="hover:cursor-pointer hover:text-third-font-color">
+                  <a href="https://www.umgmyanmar.com/" target="_blank">
+                    UMG Myanmar
+                  </a>
+                </li>
+              </div>
             </ul>
           </div>
         </div>

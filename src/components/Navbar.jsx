@@ -48,7 +48,7 @@ export default function Navbar() {
             </span>
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             className={({ isActive }) =>
               isActive ? "text-third-font-color" : "text-secondary-font-color"
@@ -59,7 +59,7 @@ export default function Navbar() {
               <IoBagHandleOutline className="hover:text-third-font-color" />
             </span>
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             className={({ isActive }) =>
