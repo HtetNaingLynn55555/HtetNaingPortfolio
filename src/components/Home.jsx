@@ -43,7 +43,7 @@ export default function Home() {
         </div>
       </div>
       <Projects />
-      <Service />
+      {/* <Service /> */}
       <Tool />
     </>
   );
